@@ -326,7 +326,7 @@ Once message generation has been initiated, all messages in the transmission wil
               }
             }
 
-+ Response 403 (application/json)
++ Response 400 (application/json)
 
   + Body
 
@@ -334,8 +334,8 @@ Once message generation has been initiated, all messages in the transmission wil
               "errors" : [
                 {
                   "description" : "Unconfigured or unverified sending domain.",
-                  "code" : "1100",
-                  "message" : "permission denied"
+                  "code" : "7001",
+                  "message" : "Invalid domain"
                 }
               ]
             }
